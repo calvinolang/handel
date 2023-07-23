@@ -5,7 +5,7 @@
       id: from-2866
       parameters:
         kind: in
-        promptMessage: "handel> 
+        promptMessage: "handel> "
       description: Repl in
       steps:
         - to:
