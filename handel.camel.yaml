@@ -5,9 +5,15 @@
       id: from-2866
       parameters:
         kind: in
-        promptMessage: "handel> "
+        promptMessage: 'handel> '
       description: Repl in
       steps:
+        - process:
+            ref: HandelParser
+            id: process-8f98
+        - log:
+            message: ${in.body.class.name}
+            id: log-1360
         - to:
             uri: stream
             id: to-2e28
